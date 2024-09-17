@@ -1,7 +1,7 @@
 /* Start My Personal Theme */
 body{
   font-family: 'Roboto Condensed', sans-serif;
-  background-color: #212428;
+  background-color: #141414;
 }
 
 :root {
@@ -417,6 +417,10 @@ body{
 /* End section about */
 
 /* Start Section resume */
+.resume {
+  overflow: hidden;
+}
+
 .resume .intro p {
   color: gray;
   font-size: 19px;
@@ -474,6 +478,11 @@ body{
 
 .resume .card p {
   color: gray;
+}
+
+.resume .card .special-two {
+  color: #d0d0d0;
+  font-weight: bold;
 }
 
 .resume .card .heading {
@@ -601,91 +610,203 @@ body{
 /* Start section our-service */
 .my-service{
   overflow: hidden;
-  margin: 120px 0px;
   color: #fff;
 }
 
-.my-service h2{
-  position:relative;
-  font-family:'Abril Fatface';
-  font-weight:normal;
-  font-size: 50px;
-  text-align:center;
-  margin: 35px 0px;
-  color:rgba(255,255,255,0.95);
+.my-service .card-container {
+  height: 300px;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 }
 
-.my-service .container .services{
-  justify-content: space-around;
+.my-service .card {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background-color: black;
+}
+
+.my-service .card .front-content {
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
 }
 
-.my-service .container .services .card{
-  width: 330px;
-  text-align: center;
-  background: #222;
-  padding: 20px 15px;
-  margin-bottom: 30px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 0.3s;
+.my-service .card .front-content p {
+  font-size: 32px;
+  font-weight: 700;
+  opacity: 1;
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
 }
 
-.my-service .container .services .card:hover{
-  background: chocolate;
-}
-
-.my-service .container .services .card .content{
-  transition: 0.3s;
-}
-
-.my-service .container .services .card:hover .content{
-  transform: scale(1.07);
-}
-
-.my-service .container .services .card .content .icon{
-  padding: 5px 0;
-  color: white;
-}
-
-.my-service .container .services .card .content .icon i{
-  font-size: 40px;
-}
-
-.my-service .container .services .card:hover .content .title{
-  color: white;
-}
-
-.my-service .container .services .card .content .title{
-  padding: 5px 0;
-  font-size: 24px;
-  font-weight: 500;
-  color: #fff;
-  transition: 0.3s;
-}
-
-.my-service .container .services .card .content .title span{
-  color: #9b0000;
-  font-size: 22px;
-}
-
-.my-service .card:after {
-  content: '';
+.my-service .card .content {
   position: absolute;
-  left: -2px;
-  top: -2px;
-  border-radius: 10px;
-  background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
-		#0000ff, #00ff00,#ffff00, #ff0000);
-  background-size: 400%;
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  z-index: -1;
-  animation: steam 20s linear infinite;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+  color: #e8e8e8;
+  padding: 20px;
+  line-height: 1.5;
+  border-radius: 5px;
+  pointer-events: none;
+  transform: translatex(96%);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.my-service .card .content .heading {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.my-service .card:hover .content {
+  transform: translateY(0);
+}
+
+.my-service .card:hover .front-content {
+  transform: translateX(20%);
+}
+
+.my-service .card:hover .front-content p {
+  opacity: 0;
 }
 /* End section our-service */
+
+/* Start Section skills */
+.skills .card {
+  width: 190px;
+  height: 254px;
+  background: #171717;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 3px 1px #00000088;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0px 15px;
+}
+
+.skills .card .content {
+  border-radius: 10px;
+  background: #171717;
+  width: 186px;
+  height: 250px;
+  z-index: 1;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.skills .content::before {
+  opacity: 0;
+  transition: opacity 300ms;
+  content: " ";
+  display: block;
+  background: #fff5;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  filter: blur(50px);
+}
+
+.skills .card:hover .content::before {
+  opacity: 1;
+}
+
+.skills .card::before {
+  opacity: 1;
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 300px;
+  transform: rotate(0deg) translateY(50%);
+  background: linear-gradient(90deg, #ff2288, transparent);
+  transition: opacity 300ms;
+  animation: rotation_9018 3000ms infinite linear;
+  animation-play-state: paused;
+}
+
+.skills .card::after {
+  opacity: 1;
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 300px;
+  transform: rotate(0deg) translateY(-50%);
+  background: linear-gradient(90deg, transparent, #2268ff);
+  transition: opacity 300ms;
+  animation: rotation_9019 3000ms infinite linear;
+  animation-play-state: paused;
+}
+
+.skills .card:hover::before {
+  opacity: 1;
+  animation-play-state: running;
+}
+
+.skills .card:hover::after {
+  opacity: 1;
+  animation-play-state: running;
+}
+
+.skills .card:hover .glass {
+  opacity: 0;
+}
+
+.skills .glass {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 190px;
+  height: 254px;
+  background: #17171733;
+  backdrop-filter: blur(50px);
+  z-index: 1;
+  transition-duration: 0.5s;
+}
+
+@keyframes rotation_9018 {
+  0% {
+    transform: rotate(0deg) translateY(50%);
+  }
+
+  100% {
+    transform: rotate(360deg) translateY(50%);
+  }
+}
+@keyframes rotation_9019 {
+  0% {
+    transform: rotate(0deg) translateY(-50%);
+  }
+
+  100% {
+    transform: rotate(360deg) translateY(-50%);
+  }
+}
+/* End Section skills */
 
 /* Start Section Portfolio */
 .portfolio {
