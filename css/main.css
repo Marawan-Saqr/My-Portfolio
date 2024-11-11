@@ -689,19 +689,34 @@ body{
 /* End section our-service */
 
 /* Start Section skills */
-.skills .card {
-  width: 190px;
+.skills .skill-card {
+  width: 100%;
+  max-width: 200px;
   height: 254px;
   background: #171717;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 0px 3px 1px #00000088;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   cursor: pointer;
   position: relative;
   overflow: hidden;
   border-radius: 10px;
-  margin: 0px 15px;
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 767px) {
+  .skills .skill-card {
+    max-width: 500px;
+    pointer-events: none;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 991px) {
+  .skills .skill-card {
+    max-width: 700px;
+    pointer-events: none;
+  }
 }
 
 .skills .card .content {
@@ -710,12 +725,23 @@ body{
   width: 186px;
   height: 250px;
   z-index: 1;
-  padding: 20px;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+}
+
+@media (max-width: 767px) {
+  .skills .card .content {
+    width: 450px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .skills .card .content {
+    width: 500px;
+  }
 }
 
 .skills .content::before {
@@ -728,6 +754,39 @@ body{
   height: 50px;
   position: absolute;
   filter: blur(50px);
+}
+
+.skills .content svg {
+  font-size: 90px;
+  color: red;
+}
+
+.skills .content svg[id='html']{
+  color: #E34F26;
+}
+
+.skills .content svg[id='css']{
+  color: #1572B6 ;
+}
+
+.skills .content svg[id='js']{
+  color: #F7DF1E;
+}
+
+.skills .content svg[id='boot']{
+  color: #7952B3;
+}
+
+.skills .content svg[id='sass']{
+  color: #CC6699;
+}
+
+.skills .content svg[id='angular']{
+  color: #DD0031;
+}
+
+.skills .content svg[id='react']{
+  color: #61DAFB;
 }
 
 .skills .card:hover .content::before {
