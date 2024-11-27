@@ -893,62 +893,93 @@ body{
   color:rgba(255,255,255,0.95);
 }
 
-.gallery{
-  width: 100%;
-}
-
-.gallery-container{
+.portfolio .card {
   display: flex;
-  align-items: center;
-  height: 400px;
-  margin: 0 auto;
-  max-width: 1000px;
+  flex-direction: column;
+  background: none;
+}
+
+.portfolio .red-btn {
+  height: 150px;
+  margin: 15px;
+  background: rgb(255, 0, 0);
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  color: white;
+  border: none;
+  border-radius: 0.625em;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
   position: relative;
-}
-
-.gallery-item{
-  height: 200px;
-  opacity: 0;
-  position: absolute;
-  transition: all 0.3s ease-in-out;
-  width: 330px;
-  z-index: 0;
-  border-radius: 15px;
-  background-size: contain;
-}
-
-.gallery-item-1 {
-  left: 15%;
-  opacity: .4;
-  transform: translateX(-50%);
-}
-
-.gallery-item-2,
-.gallery-item-4{
-  height: 250px;
-  opacity: 0.8;
-  width: 380px;
   z-index: 1;
+  overflow: hidden;
 }
 
-.gallery-item-2{
-  left: 30%;
-  transform: translateX(-50%);
+
+.portfolio .box button:hover {
+  color: rgb(0, 0, 0);
 }
 
-.gallery-item-3 {
-  box-shadow: -2px 5px 33px 6px rgba(0, 0, 0, 0.35);
-  height: 300px;
-  opacity: 1;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 430px;
-  z-index: 2;
+.portfolio .box button:after {
+  content: "";
+  background: white;
+  position: absolute;
+  z-index: -1;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 0.5s;
 }
 
-.gallery-item-4 {
-  left: 70%;
-  transform: translateX(-50%);
+.portfolio .box button:hover:after {
+  transform: skewX(-45deg) scale(1, 1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.portfolio .box button a {
+  color: black;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.portfolio .box button a:hover {
+  color: orangered;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.portfolio .show-more button {
+  background-color: var(--main-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 19px;
+  transition: all 0.5s;
+  padding: 5px 18px;
+}
+
+.portfolio .show-more {
+  text-align: center;
+}
+
+.portfolio .show-more button:hover {
+  background-color: var(--hover-main-color);
+  transition: all 0.5s;
 }
 /* End Section Portfolio */
 
