@@ -1,4 +1,4 @@
-// News section function
+// News Text section function
 let style = document.createElement('style');
 let position = "right";
 style.innerHTML = `@keyframes my-animation {
@@ -6,6 +6,8 @@ style.innerHTML = `@keyframes my-animation {
   100%{${position}: 100%;}
 }`;
 document.head.append(style);
+
+
 
 // WOW JS Function
 new WOW().init();
