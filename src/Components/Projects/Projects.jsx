@@ -30,10 +30,10 @@ const Projects = () => {
                     <h6>{project.projectName}</h6>
                     <Card.Text>{project.projectDescription}</Card.Text>
                     <div className="links d-flex">
-                      <a href={project.projectCode}>
+                      <a href={project.projectLink}>
                         <i className="fa-solid fa-link"></i>
                       </a>
-                      <a href={project.projectLink}>
+                      <a href={project.projectCode}>
                         <i className="fa-brands fa-github"></i>
                       </a>
                     </div>
