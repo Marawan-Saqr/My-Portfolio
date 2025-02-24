@@ -1,0 +1,36 @@
+.top-logo .left h2.special-font {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.top-logo .left .animated-letter {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInLetter 0.5s forwards ease-in;
+}
+
+@keyframes fadeInLetter {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.top-logo .right .clock-container {
+  color: var(--white-color);
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 767px) {
+  .top-logo {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

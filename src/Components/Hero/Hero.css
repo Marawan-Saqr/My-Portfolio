@@ -1,0 +1,70 @@
+.hero .left .parent-img {
+  display: flex;
+  align-items: end;
+}
+
+.hero .left .parent-img .img-avatar img {
+  width: 88px;
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.hero .left .parent-img .verified i {
+  color: #0374df;
+}
+
+.hero .left .title h1 {
+  color: var(--white-color);
+  text-transform: uppercase;
+  font-size: 45px;
+  margin: 20px 0px;
+}
+
+.hero .left .title .social-links {
+  display: flex;
+  gap: 10px;
+  color: var(--icon-hover);
+}
+
+.hero .left .title .social-links i {
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  font-size: 25px;
+  color: var(--icon-color);
+}
+
+.hero .left .title .social-links i:hover {
+  color: var(--icon-hover);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.hero .left a[class='btn cv mt-3'] {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.hero .left a[class='btn cv mt-3']:hover {
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  background-color: var(--website-color);
+}

@@ -1,0 +1,78 @@
+:root {
+  --primary-color: crimson;
+  --container-color: #18181b;
+  --website-color: #000;
+  --paragraph-color: gray;
+  --white-color: #fff;
+  --icon-color: #888888;
+  --icon-hover: #f0f0f0;
+}
+
+body {
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  font-style: normal;
+  background-color: var(--website-color);
+}
+
+p {
+  color: var(--paragraph-color);
+}
+
+.container.main {
+  background-color: var(--container-color);
+}
+
+hr {
+  color: var(--paragraph-color);
+}
+
+span {
+  color: var(--primary-color);
+}
+
+h2 {
+  color: var(--white-color);
+  text-transform: uppercase;
+}
+
+
+
+.shine {
+  font-size: 2em;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.3);
+  background: #222 -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#222),
+      to(#222),
+      color-stop(0.5, #fff)
+    ) 0 0 no-repeat;
+  background-image: -webkit-linear-gradient(
+    -40deg,
+    transparent 0%,
+    transparent 40%,
+    #fff 50%,
+    transparent 60%,
+    transparent 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-background-size: 50px;
+  -webkit-animation: zezzz;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+}
+@-webkit-keyframes zezzz {
+  0%,
+  10% {
+    background-position: -200px;
+  }
+  20% {
+    background-position: top left;
+  }
+  100% {
+    background-position: 200px;
+  }
+}

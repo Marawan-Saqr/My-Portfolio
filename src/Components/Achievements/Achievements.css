@@ -1,0 +1,36 @@
+@media (max-width: 767px) {
+  .achievements .box {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .achievements .box {
+    margin-bottom: 50px;
+  }
+}
+
+.achievements .box i {
+  font-size: 43px;
+}
+
+.achievements .box i[class='fa-solid fa-code'] {
+  color: #7d00b8;
+}
+
+.achievements .box i[class='fa-brands fa-html5'] {
+  color: #e34c26;
+}
+
+.achievements .box i[class='fa-brands fa-square-js'] {
+  color: yellow;
+}
+
+.achievements .box i[class='fa-brands fa-react'] {
+  color: #61DBFB;
+}
+
+.achievements .box h5 {
+  color: var(--white-color);
+}
+

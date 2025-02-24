@@ -1,0 +1,6 @@
+footer h5 {
+  margin: 0px;
+  text-transform: uppercase;
+  color: var(--white-color);
+  padding: 20px 0px;
+}

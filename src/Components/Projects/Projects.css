@@ -1,0 +1,93 @@
+.projects h4 {
+  color: var(--white-color);
+  text-transform: uppercase;
+}
+
+.projects .card {
+  background-color: black;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+@media (max-width: 767px) {
+  .projects .card {
+    margin-bottom: 25px;
+  }
+}
+
+.projects .card:hover {
+  transform: scale(1.1) rotate(2deg);
+  -webkit-transform: scale(1.1) rotate(2deg);
+  -moz-transform: scale(1.1) rotate(2deg);
+  -ms-transform: scale(1.1) rotate(2deg);
+  -o-transform: scale(1.1) rotate(2deg);
+  border: 1px solid var(--primary-color);
+}
+
+@media (max-width: 767px) {
+  .projects .card:hover {
+    transform: scale(1.0) rotate(0deg);
+    -webkit-transform: scale(1.0) rotate(0deg);
+    -moz-transform: scale(1.0) rotate(0deg);
+    -ms-transform: scale(1.0) rotate(0deg);
+    -o-transform: scale(1.0) rotate(0deg);
+}
+}
+
+.projects .card h6 {
+  color: var(--white-color);
+}
+
+.projects .card p {
+  color: var(--icon-color);
+  font-size: 13px;
+}
+
+.projects .card .links {
+  display: flex;
+  gap: 5px;
+}
+
+.projects .card .links a {
+  color: var(--icon-color);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  font-size: 17px;
+}
+
+.projects .card .links a:hover {
+  color: var(--icon-hover);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.projects .another-projects h6 {
+  color: var(--white-color);
+}
+
+.projects .another-projects h6 i[class='fa-brands fa-html5'] {
+  color: #e34c26;
+}
+
+.projects .another-projects h6 i[class='fa-brands fa-react'] {
+  color: #61DBFB;
+}
+
+.projects .another-projects h6 a {
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  .projects .another-projects {
+    text-align: center;
+  }
+}
