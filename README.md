@@ -21,8 +21,6 @@
   Images Animations => Lottie Files
   Motion Animation => Framer Motion
 
-Vercel Deployment => https://lnkd.in/djurb_7y
-
 # Next Project
 ==> Admin Dashboard (Project Eight)
 

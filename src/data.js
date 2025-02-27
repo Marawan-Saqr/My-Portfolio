@@ -1,10 +1,10 @@
 export const myProjects = [
   {
-    projectImg: "./net-movies.png",
-    projectName: "Net Movies",
+    projectImg: "./movies-station.png",
+    projectName: "Movies Station",
     projectDescription: "User Can Display All Movies And Add/Remove Movies From Watched List.",
-    projectLink: "https://net-movies-pied.vercel.app/",
-    projectCode: "https://github.com/Marawan-Saqr/NetMovies",
+    projectLink: "https://intern-intelligence-movies-station.vercel.app/",
+    projectCode: "https://github.com/Marawan-Saqr/InternIntelligence_Movies_Station",
   },
   {
     projectImg: "./screen-cart.png",
